@@ -1,8 +1,6 @@
-pins.setPull(DigitalPin.P15, PinPullMode.PullNone)
 pins.setPull(DigitalPin.P14, PinPullMode.PullNone)
 pins.setPull(DigitalPin.P13, PinPullMode.PullNone)
 
-const center: DigitalPin = DigitalPin.P15
 const left: DigitalPin = DigitalPin.P14
 const right: DigitalPin = DigitalPin.P13
 
