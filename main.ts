@@ -7,7 +7,6 @@ const right: DigitalPin = DigitalPin.P13
 let left1
 let right1
 
-
 function control1(left: number = 0, right: number = 0) {
     let leftMotor = (Math.map(left, -100, 100, -255, 255)) * -1
     let rightMotor = (Math.map(right, -100, 100, -200, 200)) * -1
@@ -18,9 +17,8 @@ function control1(left: number = 0, right: number = 0) {
 }
 
 
-
 basic.forever(function () {
-
+    basic.pause(5)
     left1 = pins.digitalReadPin(left)
     right1 = pins.digitalReadPin(right)
 
@@ -33,8 +31,4 @@ basic.forever(function () {
     } else {
         control1(100, 100)
     }
-
-
-
-
 })
